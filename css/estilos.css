@@ -1,0 +1,417 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: arial;
+}
+
+img{
+    vertical-align: top;
+}
+/*CONTENEDOR GENERAL*/
+.contenedor{
+    width: 100%;
+    max-width: 1000px;
+    overflow: hidden;
+    margin: auto;
+}
+
+/*HEADER*/
+header{
+    background: linear-gradient(to bottom, rgba(211,135,20, .6), rgba(29,241,171, .6), rgba(7,109,150, .45)),url('../img/fondo.jpg');
+    height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+}
+
+
+
+.menu{
+    float: right;
+    line-height: 100px;
+}
+
+.menu a{
+    color:#fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0px 20px;
+    transition: .2s;
+}
+.menu a:hover{
+    border-bottom: 3px solid #06F9BE;
+}
+
+#chk{
+    position: absolute;
+    visibility: hidden;
+    z-index: -100;
+}
+
+.boton-abrir-menu{
+    font-size: 30px;
+    cursor: pointer;
+    color: #fff;
+}
+.boton-cerrar-menu{
+    font-size: 30px;
+    cursor: pointer;
+    color: #fff;
+    display: none
+}
+
+.boton-abrir-menu{
+    float: right;
+    line-height: 100px;
+    display: none;
+}
+
+.contenedor-titulos-header{
+    padding-top: 140px;
+    margin-left: 10%;
+   
+    
+}
+.contenedor-titulos-header h1{
+    font-size: 90px;
+    color:#fff;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contenedor-titulos-header h2{
+    color:#fff;
+    font-size: 35px;
+    font-weight: 300;
+    text-align: center;
+}
+
+@media screen and (max-width:768px){
+    .boton-abrir-menu,
+    .boton-cerrar-menu{
+        display: block;
+    }
+    .menu{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #333;
+        text-align: center;
+        transition: .7s;
+        right: -100%;
+        }
+        
+        .menu a{
+            display: block;
+        }
+        .boton-cerrar-menu{
+            position: absolute;
+            top: 5px;
+            right: 50px;
+        }
+
+     #chk:checked ~ .menu{
+         right: 0;
+     }
+    
+}
+
+/*EQUIPO*/
+#equipo{
+   background: #f4f4f4f4;
+   margin-bottom: 50px;
+}
+.contenedor-titulos-equipo{
+padding: 50px;
+text-align: center;
+}
+
+.contenedor-titulos-equipo h2{
+    font-size: 50px;
+     color:rgb(219, 144, 1);
+    
+}
+.contenedor-titulos-equipo p{
+    color:rgba(211,135,20, .6);
+    margin-top: 15px;
+}
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.contenedor-equipo-individual{
+width: 30%;
+height: 400px;
+overflow: hidden;
+box-shadow:  0 0 6px 0 rgba(0,0,0,.5);
+margin: 10px;
+}
+
+.contenedor-img-equipo{
+width: 100%;
+height: 80%;
+}
+.contenedor-equipo-individual img{
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor-equipo-individual h2{
+    text-align: center;
+    margin-top: 5px;
+}
+.contenedor-equipo-individual p{
+    text-align: center;
+    margin-top: 10px;
+    color:rgb(219, 144, 1);
+}
+
+/*SERVICIOS*/
+#servicios{
+    background-image: url(../img/teclado.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+    
+}
+
+.contenedor-titulos-servicios{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contenedor-titulos-servicios h2{
+    color:#fff;
+    font-size: 40px;
+    margin-top: 30px;
+    color:rgb(219, 144, 1);
+}
+.contenedor-titulos-servicios p {
+    color:#fff;
+    margin-top: 15px;
+    color:rgb(219, 144, 1);
+    font-size: 18px;
+}
+
+.contenedor-servicios{
+    display: flex;
+    text-align: center;
+}
+
+.contenedor-servicios-individual{
+    width: 50%;
+}
+
+.contenedor-servicios-individual h4{
+    color:#fff;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.contenedor-servicios-individual  p{
+    color:rgb(219, 144, 1);
+}
+
+/*BOTONES TRABAJO*/
+#trabajos{
+    background: #f4f4f4f4;
+    padding: 60px;
+}
+
+.contenedor-titulos-trabajo{
+    text-align: center;
+    margin-bottom: 30px;
+  
+}
+
+.contenedor-titulos-trabajo h2{
+    color:rgb(219, 144, 1);
+    font-size: 50px;
+}
+
+.contenedor-titulos-trabajo p{
+    color:rgb(219, 144, 1);
+    margin-top: 15px;
+}
+
+.contenedor-botones-trabajos {
+  margin-bottom: 30px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  overflow: hidden;
+}
+
+.contenedor-botones-trabajos li{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 15px;
+    border:1px solid rgb(219, 144, 1);
+    cursor: pointer;
+    color:rgb(219, 144, 1);
+    
+}
+
+.contenedor-botones-trabajos li:hover{
+    background: rgb(219, 144, 1);
+    color:#fff;
+    
+}
+
+.active{
+    background: rgb(219, 144, 1);
+    
+}
+#boton-señalado{
+    color:#fff;
+}
+
+.contenedor-galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.contenedor-galeria-individual{
+    width: 31%;
+    height: 300px;
+    overflow: hidden;
+    box-shadow:  0 0 6px 0 rgba(0,0,0,.5);
+    margin: 10px;
+   
+}
+
+.contenedor-galeria-img{
+    width: 100%;
+    height: 80%;
+}
+
+.contenedor-galeria-individual img{
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor-galeria-individual p{
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer{
+    background-image: url(../img/teclado.jpg);
+    height: 500px;
+    
+}
+
+.logo-footer{
+color:#fff;
+margin-top: 20px;
+font-size: 40px;
+margin-left: 30%;
+}
+
+.contenedor-iconos-footer{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 200px;
+}
+
+.contenedor-iconos-footer i{
+    font-size: 50px;
+    color:#fff;
+    cursor: pointer;
+    padding: 20px;
+}
+
+.contenedor-iconos-footer .icono1:hover{
+background: #0785F3;
+}
+
+.contenedor-iconos-footer .icono2:hover{
+    background: #F30707;
+    }
+
+    .contenedor-iconos-footer .icono3:hover{
+        background: #333;
+        }
+
+    .contenedor-footer p{
+        text-align: center;
+        color:rgb(219, 144, 1);
+        margin-top: 5px;
+    }
+
+    /*ADPTACION A DISPOSITIVOS MOVILES*/
+
+    @media screen and (max-width:768px){
+        .contenedor-equipo-individual{
+            width: 42%;
+        }
+     
+        .contenedor-servicios{
+            display: flex;
+            flex-direction: column;
+        }
+        .contenedor-servicios-individual{
+            width: 100%;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        .contenedor-galeria-individual{
+            width: 45%;
+        }
+        
+        
+       
+    }
+
+   
+
+    @media screen and (max-width:600px){
+        .contenedor-equipo-individual{
+            width: 60%;
+        }
+
+        .contenedor-galeria-individual{
+            width: 45%;
+        }
+       
+    }
+
+    @media screen and (max-width:360px){
+        .contenedor-titulos-header h1{
+            font-size: 40px;
+        }
+
+        .contenedor-titulos-header h2{
+            font-size: 20px;
+            margin-top: 20px;
+            }
+
+        .contenedor-titulos-equipo h2{
+            font-size: 30px;
+
+        }
+
+        .contenedor-equipo-individual{
+            width: 80%;
+        }
+
+        .contenedor-galeria-individual {
+            width: 100%;
+        }
+
+        footer h2{
+            font-size: 25px;
+            margin-right: 10px;
+        }
+    }

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Plantilla profesional</title>
+    <meta name="description" content="Plantilla web profesional">
+    <meta name="keywords" content="Plantilla web, plantilla profesional.">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="js/codigo.js"></script>
+    <script src="https://kit.fontawesome.com/b066a1a9ad.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="chk">
+
+            <label for="chk" class="boton-abrir-menu">
+                <i class="fas fa-ellipsis-h"></i>
+            </label>
+
+            <ul class="menu">
+                <a href="#">Inicio</a>
+                <a href="#">Equipo</a>
+                <a href="#">Servicios</a>
+                <a href="#">Trabajos</a>
+                <a href="#">Contacto</a>
+
+                <label for="chk" class="boton-cerrar-menu">
+                    <i class="fas fa-window-close"></i>
+                </label>
+            </ul>
+        </nav>
+
+        <div class="contenedor-titulos-header">
+            <h1>Lisandro Diseño</h1>
+            <h2>Agencia de desarollo web</h2>
+        </div>
+    </header>
+
+    <main>
+        <section id="equipo">
+            <div class="contenedor">
+                <div class="contenedor-titulos-equipo">
+                    <h2>Nuestro equipo</h2>
+                    <p>Conoce a la gente asombrosa y creativa</p>
+                </div>
+
+                <div class="card">
+                    <div class="contenedor-equipo-individual">
+                        <div class="contenedor-img-equipo">
+                            <img src="img/people1.jpg" alt="">
+                        </div>
+
+                        <div class="contenedor-texto-equipo">
+                            <h2>Maria</h2>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                    <div class="contenedor-equipo-individual">
+                        <div class="contenedor-img-equipo">
+                            <img src="img/people2.jpg" alt="">
+                        </div>
+
+                        <div class="contenedor-texto-equipo">
+                            <h2>Rosa</h2>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                    <div class="contenedor-equipo-individual">
+                        <div class="contenedor-img-equipo">
+                            <img src="img/people3.jpg" alt="">
+                        </div>
+
+                        <div class="contenedor-texto-equipo">
+                            <h2>Mario</h2>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="servicios">
+            <div class="contenedor">
+                <div class="contenedor-titulos-servicios">
+                    <h2>Nuestros servicios</h2>
+                    <p>Siempre mejorando para ti</p>
+                </div>
+                <div class="contenedor-servicios">
+                    <div class="contenedor-servicios-individual">
+                        <img src="img/heart.png" alt="">
+                        <h4>Creativos y asombrosos</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                    <div class="contenedor-servicios-individual">
+                        <img src="img/responsive.png" alt="">
+                        <h4>Creativos y asombrosos</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+
+                    <div class="contenedor-servicios-individual">
+                        <img src="img/efectos.png" alt="">
+                        <h4>Creativos y asombrosos</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="trabajos">
+            <div class="contenedor">
+                <div class="contenedor-titulos-trabajo">
+                    <h2>Nuestro trabajo</h2>
+                    <p>Hacemos de algo simple algo extraordinario</p>
+                </div>
+
+                <div class="contenedor-botones-trabajos">
+                    <ul>
+                        <li class="filtro active" id="boton-señalado" data-nombre="todos">Todos</li>
+                        <li class="filtro" data-nombre="diseño">Diseño</li>
+                        <li class="filtro" data-nombre="programacion">Programacion</li>
+                        <li class="filtro" data-nombre="marketing">Marketing</li>
+
+                    </ul>
+                </div>
+
+                <div class="contenedor-galeria">
+
+                    <div class="contenedor-galeria-individual programacion">
+                        <div class="contenedor-galeria-img">
+                            <img src="img/programacion1.jpeg" alt="">
+                        </div>
+
+                        <div class="contenedor-galeria-textos">
+                            <p>Programacion</p>
+                        </div>
+                    </div>
+
+                    <div class="contenedor-galeria-individual programacion">
+                        <div class="contenedor-galeria-img">
+                            <img src="img/programacion2.jpeg" alt="">
+                        </div>
+
+                        <div class="contenedor-galeria-textos">
+                            <p>Programacion</p>
+                        </div>
+                    </div>
+
+                    <div class="contenedor-galeria-individual programacion">
+                        <div class="contenedor-galeria-img">
+                            <img src="img/programacion3.jpeg" alt="">
+                        </div>
+
+                        <div class="contenedor-galeria-textos">
+                            <p>Programacion</p>
+                        </div>
+                    </div>
+
+                    <div class="contenedor-galeria-individual diseño">
+                        <div class="contenedor-galeria-img">
+                            <img src="img/diseño1.jpeg" alt="">
+                        </div>
+
+                        <div class="contenedor-galeria-textos">
+                            <p>Diseño</p>
+                        </div>
+                    </div>
+
+                    <div class="contenedor-galeria-individual diseño">
+                        <div class="contenedor-galeria-img">
+                            <img src="img/diseño2.jpeg" alt="">
+                        </div>
+
+                        <div class="contenedor-galeria-textos">
+                            <p>Diseño</p>
+                        </div>
+                    </div>
+
+                    <div class="contenedor-galeria-individual diseño">
+                        <div class="contenedor-galeria-img">
+                            <img src="img/diseño3.jpeg" alt="">
+                        </div>
+
+                        <div class="contenedor-galeria-textos">
+                            <p>Diseño</p>
+                        </div>
+                    </div>
+
+                    <div class="contenedor-galeria-individual marketing">
+                        <div class="contenedor-galeria-img">
+                            <img src="img/marketing1.jpeg" alt="">
+                        </div>
+
+                        <div class="contenedor-galeria-textos">
+                            <p>Marketing</p>
+                        </div>
+                    </div>
+
+                    <div class="contenedor-galeria-individual marketing">
+                        <div class="contenedor-galeria-img">
+                            <img src="img/marketing2.jpeg" alt="">
+                        </div>
+
+                        <div class="contenedor-galeria-textos">
+                            <p>Marketing</p>
+                        </div>
+                    </div>
+
+                    <div class="contenedor-galeria-individual marketing">
+                        <div class="contenedor-galeria-img">
+                            <img src="img/marketing3.jpeg" alt="">
+                        </div>
+
+                        <div class="contenedor-galeria-textos">
+                            <p>Marketing</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contenedor-footer">
+            <div class="contenedor">
+                <div class="logo-footer">
+                    <h2>Lisandro Diseño </h2>
+                </div>
+
+                <div class="contenedor-iconos-footer">
+                    <i class="fab fa-facebook-f icono1"></i>
+
+                    <i class="fab fa-youtube icono2"></i>
+
+                    <i class="fab fa-github icono3"></i>
+                </div>
+                <p>La pasión e innovación es lo que nos distingue del resto</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
