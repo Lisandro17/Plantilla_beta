@@ -6,6 +6,7 @@
 
 body{
     font-family: arial;
+   
 }
 
 img{
@@ -58,6 +59,9 @@ header{
     font-size: 30px;
     cursor: pointer;
     color: #fff;
+    
+    margin-right: 50px;
+   
 }
 .boton-cerrar-menu{
     font-size: 30px;
@@ -70,6 +74,7 @@ header{
     float: right;
     line-height: 100px;
     display: none;
+   
 }
 
 .contenedor-titulos-header{
@@ -162,6 +167,7 @@ height: 80%;
 .contenedor-equipo-individual img{
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 .contenedor-equipo-individual h2{
@@ -353,7 +359,7 @@ background: #0785F3;
 
     @media screen and (max-width:768px){
         .contenedor-equipo-individual{
-            width: 42%;
+            width: 40%;
         }
      
         .contenedor-servicios{
@@ -378,11 +384,11 @@ background: #0785F3;
 
     @media screen and (max-width:600px){
         .contenedor-equipo-individual{
-            width: 60%;
+            width: 50%;
         }
 
         .contenedor-galeria-individual{
-            width: 45%;
+            width: 90%;
         }
        
     }
