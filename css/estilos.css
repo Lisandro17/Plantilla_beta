@@ -375,6 +375,10 @@ background: #0785F3;
         .contenedor-galeria-individual{
             width: 45%;
         }
+        .contenedor-footer h2{
+            font-size: 30px;
+        }
+       
         
         
        
@@ -384,12 +388,13 @@ background: #0785F3;
 
     @media screen and (max-width:600px){
         .contenedor-equipo-individual{
-            width: 50%;
+            width: 70%;
         }
 
         .contenedor-galeria-individual{
             width: 90%;
         }
+        
        
     }
 
